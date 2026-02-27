@@ -1,0 +1,16 @@
+# Netlify Configuration File
+# This tells Netlify how to build and deploy your site
+
+[build]
+  # Directory where your functions are located
+  functions = "netlify/functions"
+  
+  # The directory to publish (your site files)
+  publish = "."
+
+# Redirect rules (optional, but good for SPAs)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
